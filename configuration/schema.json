@@ -1,5 +1,44 @@
 {
     "type": "object",
-    "details": "Configuration",
-    "_data": {}
+    "details": "Duckietown web ide visual studio code",
+    "_data": {
+        "visual_studio_code": {
+            "details": "VSCode configuration",
+            "type": "object",
+            "_data": {
+                "hostname": {
+                    "details": "Hostname of the vscode",
+                    "type": "text",
+                    "default": null
+                },
+                "port": {
+                    "type": "text",
+                    "default": 80,
+                    "details": "Port the vscode"
+                },
+                "path": {
+                    "type": "text",
+                    "default": "",
+                    "details": "path for vscode"
+                }
+            }
+        },
+        "dts_launcher": {
+            "details": "VSCode configuration",
+            "type": "object",
+            "_data": {
+                "hostname": {
+                    "details": "Hostname of the dts launcher",
+                    "type": "text",
+                    "default": null
+                },
+                "port": {
+                    "type": "text",
+                    "default": 5001,
+                    "details": "Port the dts launcher"
+                }
+            }
+        }
+
+    }
 }
