@@ -14,12 +14,12 @@ $vscode_port = Core::getSetting('visual_studio_code/port', 'vscode');
 $vscode_port = ($vscode_port == "0")? "" : sprintf(":%s", ltrim($vscode_port, ":"));
 
 // get path (if any)
-$vscode_path = Core::getSetting('path', 'visual_studio_code/path');
+$vscode_path = Core::getSetting('visual_studio_code/path', 'vscode');
 $vscode_path = (strlen(trim($vscode_path)) <= 0)? "" : sprintf("/%s", ltrim($vscode_path, "/"));
 
 // compile URL
 $vscode_url = sprintf(
-    'http://%s%s%s/',
+    'http://%s%s/?folder=%s',
     $vscode_hostname,
     $vscode_port,
     $vscode_path
@@ -57,3 +57,4 @@ $vscode_url = sprintf(
   frameborder="0"
   scrolling="yes"
 ></iframe>
+

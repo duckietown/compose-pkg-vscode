@@ -1,6 +1,6 @@
 {
-    "name": "Template",
-    "description": "This is a \\compose\\ template package.",
+    "name": "VSCode",
+    "description": "VSCode Code Editor",
     "dependencies": {
         "system-packages": [],
         "packages": []

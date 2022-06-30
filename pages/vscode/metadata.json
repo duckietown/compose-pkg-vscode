@@ -1,5 +1,5 @@
 {
-    "name" : "Visual Studio Code",
+    "name" : "Code Editor",
     "package" : "vscode",
     "menu_entry" : {
         "order" : 0,

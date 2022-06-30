@@ -7,38 +7,21 @@
             "type": "object",
             "_data": {
                 "hostname": {
-                    "details": "Hostname of the vscode",
+                    "details": "Hostname of the machine where the VSCode back-end is running",
                     "type": "text",
                     "default": null
                 },
                 "port": {
                     "type": "text",
-                    "default": 80,
-                    "details": "Port the vscode"
+                    "default": 8088,
+                    "details": "Port used by the VSCode back-end"
                 },
                 "path": {
                     "type": "text",
                     "default": "",
-                    "details": "path for vscode"
-                }
-            }
-        },
-        "dts_launcher": {
-            "details": "VSCode configuration",
-            "type": "object",
-            "_data": {
-                "hostname": {
-                    "details": "Hostname of the dts launcher",
-                    "type": "text",
-                    "default": null
-                },
-                "port": {
-                    "type": "text",
-                    "default": 5001,
-                    "details": "Port the dts launcher"
+                    "details": "Path for VSCode"
                 }
             }
         }
-
     }
 }
